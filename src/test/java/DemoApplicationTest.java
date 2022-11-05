@@ -94,4 +94,11 @@ public class DemoApplicationTest extends DemoTest {
         System.out.println("呼叫 coindesk API 進行資料轉換");
         demoController.testCoindesk1();
     }
+
+    @Test
+    @Order(7)
+    public void doFindAllCustomer() throws IOException {
+        System.out.println("呼叫 doFindAllCustomer 進行資料轉換");
+        demoController.doFindAllCustomer();
+    }
 }
